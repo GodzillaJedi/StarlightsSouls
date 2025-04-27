@@ -11,7 +11,7 @@ Currrent compatible mods:
 - Polarities
 - Bombus Apis
 - Magic Storage
-WIP compatibility
+WIP compatibility:
 - Consolaria
 - Homeward Journey
 - Spirit
