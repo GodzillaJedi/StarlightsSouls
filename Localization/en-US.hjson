@@ -781,7 +781,7 @@ Mods: {
 					Cooldown depends on the action (Missed parry: 5 seconds, Taking damage: 2 seconds, Successful parry: 3 seconds, Perfect parry: 2 seconds)
 					Certain special attacks and contact damage cannot be parried
 					This ability disables shadow dodge and similar effects
-					Effects of Ring of the Fallen, Memento Mori, and Arcanum of the Caster
+					Effects of [i:SacredTools/AsthralRing] Ring of the Fallen, [i:SacredTools/MementoMori] Memento Mori, and [i:SacredTools/CasterArcanum] Arcanum of the Caster
 					'''
 			}
 
@@ -810,7 +810,7 @@ Mods: {
 					'''
 					'Your spooks and scares will send shivers down your enemies' spines'
 					Empowers certain bone-related weapons
-					Effects of Dreadflame Emblem
+					Effects of [i:SacredTools/DreadflameEmblem] Dreadflame Emblem
 					'''
 			}
 
@@ -833,7 +833,7 @@ Mods: {
 					Pressing [Ability] will activate 'Dreadfire Aura'.
 					'Dreadfire Aura' increases minion damage greatly for a minute. 
 					3 minute cooldown
-					Effects of Pumpkin Amulet
+					Effects of [i:SacredTools/PumpkinAmulet] Pumpkin Amulet
 					'''
 			}
 
@@ -851,7 +851,7 @@ Mods: {
 				Tooltip:
 					'''
 					'Does something soon'TM
-					Effects of Stone of Resonance
+					Effects of [i:SacredTools/StoneOfResonance] Stone of Resonance
 					'''
 			}
 
@@ -863,7 +863,7 @@ Mods: {
 					Hitting enemies has a chance to summon an energy blade behind you (Max of 5).
 					Every newly acquired blade increases the damage of pre-existing ones by 20%
 					Pressing [Ability] will launch the blades at nearby enemies
-					Effects of Novaniel's Resolve
+					Effects of [i:SacredTools/NovanielResolve] Novaniel's Resolve
 					'''
 			}
 
@@ -885,7 +885,7 @@ Mods: {
 					'The hunter now hunted, the prey now predator'
 					15% increased ranged damage while in the snow biome
 					Ranged projectiles frostburn enemies
-					Effects of Frigid Pendant
+					Effects of [i:SacredTools/DecreeCharm] Decree Charm
 					'''
 			}
 
@@ -895,7 +895,7 @@ Mods: {
 					'''
 					'Gotta go fast'
 					20% increased movement speed
-					Effects of Lapis Pendant
+					Effects of [i:SacredTools/LapisPendant] Lapis Pendant
 					'''
 			}
 
@@ -918,7 +918,7 @@ Mods: {
 					'''
 					'Nuba would be proud'
 					Attacking enemies may sometimes release buff wisps which can be picked up for different stacking buffs
-					Effects of Nuba's Blessing
+					Effects of [i:SacredTools/NubasBlessing] Nuba's Blessing
 					'''
 			}
 
@@ -985,8 +985,8 @@ Mods: {
 				Tooltip:
 					'''
 					':HeyMF:'
-					All armor bonuses from Prairie, Frosthunter, Lapis, and Blightbone
-					Effects of Frigid Pendant, Lapis Pendant, and Pumpkin Amulet
+					All armor bonuses from [i:SacredTools/PrairieHelmet] Prairie,[i:SacredTools/FrosthunterHeaddress] Frosthunter,[i:SacredTools/LapisHelmet] Lapis, and [i:SacredTools/BlightMask] Blightbone
+					Effects of [i:SacredTools/DecreeCharm] Decree Charm,[i:SacredTools/LapisPendant] Lapis Pendant, and [i:SacredTools/PumpkinAmulet] Pumpkin Amulet
 					'''
 			}
 
@@ -995,9 +995,9 @@ Mods: {
 				Tooltip:
 					'''
 					Through all this world's years, none have seen anything quite like you'
-					All armor bonuses from Eerie, Bismuth, and Dreadfire
-					All armor bonuses from Space Junk and Marstech
-					Effects of Dreadflame Emblem
+					All armor bonuses from [i:SacredTools/EerieHelmet] Eerie,[i:SacredTools/BismuthHelm] Bismuth, and [i:SacredTools/DreadfireMask] Dreadfire
+					All armor bonuses from [i:SacredTools/SpaceJunkHelm] Space Junk and [i:SacredTools/MarstechHelm] Marstech
+					Effects of [i:SacredTools/DreadflameEmblem] Dreadflame Emblem
 					'''
 			}
 
@@ -1006,9 +1006,9 @@ Mods: {
 				Tooltip:
 					'''
 					'The true power of the Soraniti'
-					All armor bonuses from Blazing Brute, Cosmic Commander, and Nebulous Apprentice
-					All armor bonuses from Stellar Priest, Quasar, and Fallen Prince
-					Effects of Nuba's Blessing, Novaniel's Resolve, and Celestial Ring
+					All armor bonuses from [i:SacredTools/BlazingBruteHelm] Blazing Brute,[i:SacredTools/VortexCommanderHat] Cosmic Commander, and [i:SacredTools/NubaHood] Nebulous Apprentice
+					All armor bonuses from [i:SacredTools/StellarPriestHead] Stellar Priest,[i:SacredTools/NovaHelmet] Quasar, and [i:SacredTools/FallenPrinceHelm] Fallen Prince
+					Effects of [i:SacredTools/NubasBlessing] Nuba's Blessing,[i:SacredTools/NovanielResolve] Novaniel's Resolve, and [i:SacredTools/LunarRing] Celestial Ring
 					'''
 			}
 
@@ -1017,10 +1017,10 @@ Mods: {
 				Tooltip:
 					'''
 					'Dragon Rage empowers you, and encourages you to go on'
-					All armor bonuses from Void Warden, Vulcan Reaper, and Flarium
-					All armor bonuses from Asthraltite
-					Effects of Ring of the Fallen, Memento Mori, and Arcanum of the Caster
-					Effects of Stone of Resonance
+					All armor bonuses from [i:SacredTools/VoidHelm] Void Warden,[i:SacredTools/VulcanHelm] Vulcan Reaper, and [i:SacredTools/FlariumHelmet] Flarium
+					All armor bonuses from [i:SacredTools/AsthralMelee] Asthraltite
+					Effects of [i:SacredTools/AsthralRing] Ring of the Fallen,[i:SacredTools/MementoMori] Memento Mori, and [i:SacredTools/CasterArcanum] Arcanum of the Caster
+					Effects of [i:SacredTools/StoneOfResonance] Stone of Resonance
 					'''
 			}
 
@@ -1029,15 +1029,15 @@ Mods: {
 				Tooltip:
 					'''
 					'Two worlds, now embodied as one'
-					All armor bonuses from Bismuth, Frosthunter, and Blightbone
-					All armor bonuses from Dreadfire, Space Junk, and Marstech
-					All armor bonuses from Blazing Brute, Cosmic Commander, and Nebulous Apprentice
-					All armor bonuses from Stellar Priest and Fallen Prince
-					All armor bonuses from Void Warden, Vulcan Reaper, and Flarium
-					All armor bonuses from Asthraltite
-					Effects of Dreadflame Emblem, Lapis Pendant, Frigid Pendant, and Pumpkin Amulet
-					Effects of Nuba's Blessing, Novaniel's Resolve, and Celestial Ring
-					Effects of Ring of the Fallen, Memento Mori, and Arcanum of the Caster
+					All armor bonuses from [i:SacredTools/BismuthHelm] Bismuth,[i:SacredTools/FrosthunterHeaddress] Frosthunter, and [i:SacredTools/BlightMask] Blightbone
+					All armor bonuses from [i:SacredTools/DreadfireMask] Dreadfire,[i:SacredTools/SpaceJunkHelm] Space Junk, and [i:SacredTools/MarstechHelm] Marstech
+					All armor bonuses from [i:SacredTools/BlazingBruteHelm] Blazing Brute,[i:SacredTools/VortexCommanderHat] Cosmic Commander, and [i:SacredTools/NubaHood] Nebulous Apprentice
+					All armor bonuses from [i:SacredTools/StellarPriestHead] Stellar Priest and [i:SacredTools/FallenPrinceHelm] Fallen Prince
+					All armor bonuses from [i:SacredTools/VoidHelm] Void Warden,[i:SacredTools/VulcanHelm] Vulcan Reaper, and [i:SacredTools/FlariumHelmet] Flarium
+					All armor bonuses from [i:SacredTools/AsthralMelee] Asthraltite
+					Effects of [i:SacredTools/DreadflameEmblem] Dreadflame Emblem,[i:SacredTools/LapisPendant] Lapis Pendant,[i:SacredTools/DecreeCharm] Decree Charm, and [i:SacredTools/PumpkinAmulet] Pumpkin Amulet
+					Effects of [i:SacredTools/NubasBlessing] Nuba's Blessing,[i:SacredTools/NovanielResolve] Novaniel's Resolve, and [i:SacredTools/LunarRing] Celestial Ring
+					Effects of [i:SacredTools/AsthralRing] Ring of the Fallen,[i:SacredTools/MementoMori] Memento Mori, and [i:SacredTools/CasterArcanum] Arcanum of the Caster
 					'''
 			}
 
