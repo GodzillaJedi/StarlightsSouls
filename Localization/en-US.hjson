@@ -113,7 +113,277 @@ Mods: {
 					'The land may never grow quiet again, but peace can certainly be brought upon it.'
 					'''
 			}
+			LunicCorpEnchant: {
+				Tooltip:
+					'''
+					Effects of [i:CalamityMod/LunicCorpsHelmet] Lunic Corps Armor
+					'When I joined the Corps, we didn't have any fancy-schmanzy Enchants.'
+					'''
+				DisplayName: Lunic Corp Enchantment
+			}
 
+			DaedalusEnchantEx: {
+				DisplayName: Daedalus Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/OrnateShield] Allows the ability to ram dash
+					This dash can slam through enemies without taking damage
+					Grants immunity to Chilled, Frostburn, Frostbite, and Frozen
+					[i:CalamityMod/FrostFlare] All attacks and projectiles inflict Frostbite
+					Immunity to Frostburn, Chilled and Frozen
+					Being above 50% life grants 10% increased damage
+					Being below 50% life grants 20 defense and 15% increased max movement speed and acceleration
+					Grants resistance against cold attacks
+					Effects of Daedalus Armor and Enchantment
+					'''
+			}
+
+			HydrothermicEnchantEx: {
+				DisplayName: Hydrothermic Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/VoidofExtinction] 13% increased critical strike chance
+					Critical strikes explode, causing nearby enemies to ignite with Brimstone Flames
+					Greatly reduces the damage taken by the Brimstone Flames debuff
+					[i:CalamityMod/EtherealExtorter] Rogue projectiles explode into homing souls on hit
+					8% increased rogue damage and +5 maximum stealth
+					Effects of Hydrothermic Armor and Enchantment
+					'''
+			}
+
+			ReaverEnchantEx: {
+				DisplayName: Reaver Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/NecklaceofVexation] 20% increased damage when under 50% life
+					All attacks inflict acid venom while wearing Reaver armor
+					Revenge
+					[i:CalamityMod/LivingDew] +50 max life
+					Grants +1 HP/s life regen and an additional 1 HP/s life regen when inflicted with a damage debuff
+					Standing still in Honey grants +1.5 HP/s life regen
+					Halves how long you are afflicted with fire and sickness debuffs
+					Effects of Reaver Armor and Enchantment
+					'''
+			}
+
+			TitanHeartEnchantEx: {
+				DisplayName: Titan Heart Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/MoonstoneCrown] 15% increased rogue projectile velocity
+					Stealth strikes summon lunar flares on enemy hits
+					Rogue projectiles summon homing moon sigils as they travel
+					[i:CalamityMod/InfectedJewel] +1 HP/s life regen
+					Grants 16 defense and +2 HP/s life regen while afflicted with any debuff
+					Massively boosts natural life regen while afflicted with any debuff
+					Granted defense fades away quickly when not afflicted with any debuffs
+					Each debuff beyond the first grants 5 additional defense
+					Makes the Astral Infection debuff harmless
+					'A beautiful gemstone tarnished by spaceborne rot'
+					Effects of Titan Heart Armor and Enchantment
+					'''
+			}
+
+			DevastationForceEx: {
+				DisplayName: Force of Devastation EX
+				Tooltip:
+					'''
+					[i:ssm/DaedalusEnchantEx] Effects of Ornate Shield and Frost Flare
+					[i:ssm/HydrothermicEnchantEx] Effects of Void of Extinction and Ethereal Extorter
+					[i:ssm/ReaverEnchantEx] Effects of Necklace of Vexation and Living Dew
+					[i:ssm/TitanHeartEnchantEx] Effects of Moonstone Crown and Infected Jewel
+					Effects of Daedalus, Hydrothermic, Reaver, and Titan Heart Armor and Enchantments
+					'You rise to the occasion'
+					'''
+			}
+
+			AstralEnchant: {
+				DisplayName: Astral Enchantment
+				Tooltip:
+					'''
+					[i:CalamityMod/UrsaSergeant] Decreased movement speed by 15%
+					Immune to Astral Infection and Feral Bite
+					Increased regeneration at lower health
+					[i:CalamityMod/GravistarSabaton] 20% increased jump speed
+					Grants immunity to fall damage
+					Hold {Down} to increase your maximum fall speed
+					Hold Gravistar Sabaton Hotkey for 1 second while midair to charge up a superspeed slam
+					While slamming, you ram through enemies and don't take contact damage
+					Once you reach the ground, you create an explosion at your feet
+					The explosion scales in both damage and size the longer you slam for
+					Temporary 40% increased jump speed after slamming into the ground
+					Effects of Astral Armor
+					'''
+			}
+
+			BrimflameEnchant: {
+				DisplayName: Brimflame Enchantment
+				Tooltip:
+					'''
+					[i:CalamityMod/VoidofCalamity] 12% increase to all damage
+					Brimstone fire rains down after getting hit
+					[i:CalamityMod/Abaddon] 8% increased critical strike chance
+					Critical strikes explode, causing nearby enemies to ignite with Brimstone Flames
+					Greatly reduces the damage taken by the Brimstone Flames debuff
+					[i:CalamityMod/SlagsplitterPauldron] You gain 10% damage reduction while dashing
+					Enemies you dash through are afflicted with Armor Crunch
+					Your dashes are empowered by fire, shredding enemies near you with violent explosions
+					[i:CalamityMod/SigilofCalamitas] 15% increased magic damage and 10% decreased mana usage
+					+100 max mana
+					Increases pickup range for mana stars
+					Effects of Brimflame Armor
+					'''
+			}
+
+			EmpyreanEnchant: {
+				DisplayName: Empyrean Enchantment
+				Tooltip:
+					'''
+					[i:CalamityMod/HeartofDarkness] You constantly gain rage over time
+					Rage does not fade away when out of combat
+					[i:CalamityMod/DarkMatterSheath] +10 maximum stealth
+					Mobile stealth generation accelerates while not attacking
+					Stealth strikes only expend 50% of your max stealth
+					6% increased rogue damage, and 6% increased rogue crit chance
+					Effects of Empyrean Armor
+					'''
+			}
+
+			FathomSwarmerEnchant: {
+				DisplayName: Fathom Swarmer Enchantment
+				Tooltip: 
+					'''
+					[i:CalamityMod/LumenousAmulet] Attacks inflict the Crush Depth debuff
+					Grants immunity to the Riptide and Crush Depth debuffs
+					While in the abyss you gain 25% increased max life
+					Provides a moderate amount of light in the abyss
+					[i:CalamityMod/CorrosiveSpine] 5% increased movement speed
+					All rogue weapons inflict poison and spawn poisoned clouds on enemy hits
+					You release a ton of clouds everywhere on hit
+					Effects of Fathom Swarmer Armor
+					'''
+			}
+
+			FearfallenEnchant: {
+				DisplayName: Fearfallen Enchant
+				Tooltip:
+					'''
+					[i:CalamityMod/SpectralVeil] Press [KEY] to consume 25% of your maximum stealth to perform a mid-range teleport and render you momentarily invulnerable
+					If you dodge something while invulnerable, you instantly gain full stealth
+					Teleportation is disabled while Chaos State is active
+					Stealth generates 15% faster
+					'The inside of the cloak is full of teeth...'
+					Effects of Fearmonger and Nightfallen Armor
+					'''
+			}
+
+			MolluskEnchant: {
+				DisplayName: Mollusk Enchantment
+				Tooltip:
+					'''
+					[i:CalamityMod/AquaticEmblem] Most ocean enemies become friendly and provides waterbreathing
+					Being underwater slowly boosts your defense over time but also slows movement speed
+					The defense boost and movement speed reduction slowly vanish while outside of water
+					Maximum defense boost is 50, maximum movement speed reduction is 10%
+					Provides a small amount of light in the abyss
+					Moderately reduces breath loss in the abyss
+					[i:CalamityMod/GiantPearl] You have a light aura around you
+					Enemies within the aura are slowed down
+					Does not work while a boss is alive
+					Provides a small amount of light in the abyss
+					Effects of Mollusk Armor
+					'''
+			}
+
+			OmegaBlueEnchant: {
+				DisplayName: Omega Blue Enchantment
+				Tooltip:
+					'''
+					[i:CalamityMod/OldDukeScales] 10% increased damage reduction
+					10% increased max movement speed and acceleration
+					25% increased dash velocity and length
+					Gives you a stamina indicator on the cooldown rack
+					Using any dash will consume 20% of your stamina
+					Stamina will gradually recover to 100% after not dashing for 1.5 seconds
+					Stamina recovers faster when you are stationary
+					If your stamina reaches 0%, you become exhausted
+					While exhausted, this item's damage reduction and movement bonuses are negated
+					Being exhausted reduces movement speed by 30% and dash velocity by 50%
+					This debuff lasts until your stamina reaches 100% again
+					[i:CalamityMod/ReaperToothNecklace] 15% increased damage
+					Increases armor penetration by 15
+					'A grisly trophy from the ultimate predator'
+					[i:CalamityMod/MutatedTruffle] Summons a younger fishron to irradiate your foes
+					The fishron will cycle between charging, projectiles, and a typhoon
+					Requires 3 minion slots to be used
+					There can only be one minion
+					Effects of Omega Blue Armor
+					'''
+			}
+
+			PlaguebringerEnchant: {
+				DisplayName: Plaguebringer Enchantment
+				Tooltip:
+					'''
+					[i:CalamityMod/TheBee] When at full HP, your damage is increased based on your damage reduction
+					Damage taken at full HP is halved
+					If you have any energy shields, they must also be full for these effects to work
+					This has a 10 second cooldown
+					[i:CalamityMod/InfectedRemote] Summons a humanoid-hybrid Plaguebringer, codenamed 'Virili', to aid you in battle
+					Virili requires 3 minion slots to summon, and can only be summoned once
+					Virili uses a variety of attacks which she cycles through on a timer
+					All attacks spread the plague, as was her original design intention
+					'There's a single label on the back:
+					WARNING: Subject is extremely corrosive and contagious. Avoid direct contact.'
+					Effects of Plaguebringer Armor
+					'''
+			}
+
+			PlagueReaperEnchant: {
+				DisplayName: Plague Reaper Enchantment
+				Tooltip:
+					'''
+					[i:CalamityMod/AlchemicalFlask] All attacks inflict the Plague and reduces damage taken from the Plague
+					Projectiles spawn plague seekers on enemy hits
+					Releases plague bees when damaged and douses you in honey
+					[i:CalamityMod/PlaguedFuelPack] 8% increased rogue damage and 15% increased rogue projectile velocity
+					Stealth generates 10% faster
+					Press Booster Dash to consume 25% of your maximum stealth to perform a swift upwards/diagonal dash which leaves a trail of plagued clouds
+					This effect has a 1 second cooldown before it can be used again
+					Effects of Plague Reaper Armor
+					'''
+			}
+
+			UmbraphileEnchant: {
+				DisplayName: Umbraphile Enchantment
+				Tooltip:
+					'''
+					[i:CalamityMod/VampiricTalisman] Rogue projectiles give lifesteal on crits
+					12% increased rogue damage
+					[i:CalamityMod/CoinofDeceit] Stealth strikes only expend 85% [sic] of your max stealth
+					6% increased rogue crit chance
+					Effects of Umbraphile Armor
+					'''
+			}
+
+			AnnihilationForce: {
+				DisplayName: Annihilation Force
+				Tooltip: 
+					'''
+					[i:ssm/EmpyreanEnchant] Effects of Heart of Darkness and Dark Matter Sheath
+					[i:ssm/PlagueReaperEnchant] Effects of Alchemical Flask and Plagued Fuel Pack
+					[i:ssm/PlaguebringerEnchant] Effects of The Bee and Summons Vrili to fight for you
+					[i:ssm/FearfallenEnchant] Effects of Spectral Veil
+					[i:ssm/BrimflameEnchant] Effects of Abaddon, Void of Calamity, Sigil of Calamitas, and Slagspitter Pauldron
+					Effects of Plaguebringer, Plague Reaper, Fearmonger, Nightfallen, Empyrean, and BrimflameArmor
+					'You wade through the underworld and jungles and the dark...'
+					'''
+			}
+
+			DesolationForce: {
+				DisplayName: Desolation Force
+				Tooltip: ""
+			}
 			NekomiEnchant: {
 				DisplayName: Nekomi Enchantment
 				Tooltip:
