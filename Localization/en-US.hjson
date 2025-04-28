@@ -113,6 +113,145 @@ Mods: {
 					'The land may never grow quiet again, but peace can certainly be brought upon it.'
 					'''
 			}
+
+			AerospecEnchantEx: {
+				DisplayName: Aerospec Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/GladiatorsLocket] Enemies drop a healing orb on kill
+					Gain an increase to your damage and movement speed the lower your health is, up to 20%
+					[i:CalamityMod/UnstableGraniteCore] Periodically gain an unstable energy field that repeatedly zaps nearby enemies with arcing energy
+					The arcing energy ignores a substantial amount of enemy defense
+					Effects of Aerospec Armor and Enchantment
+					'''
+			}
+
+			DesertProwlerEnchantEx: {
+				DisplayName: Desert Prowler Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/LuxorsGift] Weapons fire unique projectiles based on the damage type they have
+					Some weapons are unable to receive this bonus
+					[i:CalamityMod/ThiefsDime] Summons Goldie the rogue coin to collect nearby coins and light your way
+					Provides a small amount of light in the abyss
+					'Once worthless treasure, now a relic of a thief's companionship'
+					Effects of Desert Prowler Armor and Enchantment
+					'''
+			}
+
+			MarniteEnchantEx: {
+				DisplayName: Marnite Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/HallowedRune] Whenever your minions hit an enemy you will gain a random buff, does not stack with downgrades
+					Hallowed Power increases summon damage by 10% and makes minion hits rain stars
+					Hallowed Defense increases defense by 8 and DR by 4%
+					Hallowed Regen grants +1.5 HP/s life regeneration
+					[i:CalamityMod/RoverDrive] Projects an energy shield that absorbs up to 20 damage
+					Halves Adrenaline lost on hit if the shield fully absorbs the hit
+					The shield grants 10 defense while active
+					After the shield is broken, it takes 10 seconds to charge back up
+					Being hit again while recharging restarts the charge timer
+					Can also be scrapped at an extractinator
+					Effects of Marnite Architect Toga and Enchantment
+					'''
+			}
+
+			SnowRuffianEnchantEx: {
+				DisplayName: Snow Ruffian Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/ScuttlersJewel] Stealth strike projectiles spawn a jewel spike when destroyed
+					Can also be broken down at an extractinator
+					[i:CalamityMod/TheCamper] You deal 90% less damage unless stationary
+					Standing still grants buff(s) dependent on what weapon you're holding
+					Standing still provides a damaging aura around you
+					While moving, you regenerate health as if standing still
+					Provides a small amount of light in the Abyss
+					'In rest may we find victory'
+					Effects of Snow Ruffian Armor and Enchantment
+					'''
+			}
+
+			StatigelEnchantEx: {
+				DisplayName: Statigel Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/StarTaintedGenerator] +2 max minions, does not stack with downgrades
+					7% increased summon damage
+					Minion attacks spawn astral explosions and inflict several debuffs
+					Grants immunity to Irradiated
+					[i:CalamityMod/ManaPolarizer] Increases max mana by 50 and magic damage by 6%
+					-1.5 HP/s life regen if mana is above 50% of its maximum
+					Magic projectiles give lifesteal while holding a magic weapon
+					The more mana you have, the more you heal
+					Effects of Statigel Armor and Enchantment
+					'''
+			}
+
+			SulphurousEnchantEx: {
+				DisplayName: Sulphurous Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/SandCloak] 5% increased movement speed
+					Press {Hotkey} to consume 10% of your maximum stealth to create a protective dust veil which damages and knocks back enemies
+					While inside the veil, you are given +6 defense and +1 HP/s life regen
+					This effect has a 30 second cooldown before it can be used again
+					[i:CalamityMod/AmidiasPendant] Periodically rains down prism shards that can briefly stun enemies
+					[i:CalamityMod/OldDie] Increases luck by 20%
+					'Lucky for you, the curse doesn't affect you. Mostly'
+					[i:CalamityMod/RustyMedallion] Causes most ranged weapons to release acid droplets from the sky
+					Grants immunity to Irradiated
+					Effects of Sulphurous Armor and Enchantment
+					'''
+			}
+
+			VictideEnchantEx: {
+				DisplayName: Victide Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/FungalClump] Summons a fungal clump to fight for you
+					The clump latches onto enemies and steals their life for you
+					[i:CalamityMod/FungalSymbiote] You grow mushrooms on the grass beneath you
+					Consuming mushrooms provides the Mushy buff, increasing defense by 6 and granting 1 HP/s life regen
+					All mushroom-based weapons deal 10% more damage and emit non-damaging mushrooms
+					[i:CalamityMod/ShieldoftheOcean] Increased defense by 5 when submerged in liquid
+					10% increased movement speed and +1 HP/s life regen while wearing Victide armor
+					Effects of Victide Armor and Enchantment
+					'''
+			}
+
+			WulfrumEnchantEx: {
+				DisplayName: Wulfrum Enchantment EX
+				Tooltip:
+					'''
+					[i:CalamityMod/TrinketofChi] Provides 4% damage reduction after not being hit for 5 seconds, this is removed when you are hit
+					+1 HP/s life regen for you and everyone on your team
+					[i:CalamityMod/WulfrumAcrobaticsPack] Transforms equipped hooks into a wulfrum slingshot
+					The slingshot allows for advanced rope-swinging physics
+					Automatically grapples nearby walls if a lethal fall is detected
+					This safety feature won't activate if [KEY] is held
+					8% increased movement speed
+					Effects of Wulfrum Armor and Enchantment
+					'''
+			}
+
+			ExplorationForceEx: {
+				DisplayName: Force of Exploration EX
+				Tooltip:
+					'''
+					[i:ssm/AerospecEnchantEx] Effects of Gladiators Locket, Unstable Granite Core, and Feather Crown
+					[i:ssm/DesertProwlerEnchantEx] Effects of Luxor's Gift and Thief's Dime
+					[i:ssm/MarniteEnchantEx] Effects of Hallowed Rune and Rover Drive
+					[i:ssm/VictideEnchantEx] Effects of Fungal Clump, Fungal Symbiote and Shield of the Ocean
+					[i:ssm/WulfrumEnchantEx] Effects of Wulfrum Acrobatics Pack and Trinket of Chi
+					[i:ssm/SulphurousEnchantEx] Effects of Sand Cloak, Amidias' Pendant, Old Die, and Rusty Medallion
+					[i:ssm/StatigelEnchantEx] Effects of Star Tainted Generator and Mana Polarizer
+					[i:ssm/SnowRuffianEnchantEx] Effects of Scuttler's Jewel and The Camper
+					Effects of Aerospec, Desert Prowler, Marnite, Victide, Wulfrum, Sulphurous, Statigel, and Snow Ruffian Armors and Enchantments
+					'The Beginning of your Journey'
+					'''
+			}
 			LunicCorpEnchant: {
 				Tooltip:
 					'''
