@@ -11,10 +11,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using ssm.Core;
 using ssm.Systems;
-using ssm.Thorium;
 using System.Collections.Generic;
-using ssm.SoA;
-using ssm.Redemption;
 using System.Linq;
 using Terraria.Localization;
 using ssm.Content.Items.Summons;
@@ -23,11 +20,9 @@ using ssm.Content.UI;
 using ssm.Calamity.Addons.CalamityAmmo;
 using Terraria.UI;
 using ssm.CrossMod.CraftingStations;
-// using ssm.gunrightsmod;
-using ssm.SpiritMod;
 using Fargowiltas.Items.CaughtNPCs;
 using System.Collections;
- using ssm.AlchemistNPC;
+using ssm.AlchemistNPC;
 using ssm.Consolaria;
 using ssm.Content.Items.Consumables;
 using System.IO;
@@ -41,7 +36,6 @@ using ssm.Content.NPCs.Ceiling;
 using FargowiltasSouls.Content.Items.Materials;
 //using ssm.Content.NPCs.MutantEX.HitPlayer;
 //using FargowiltasSouls.Content.NPCs.EternityModeNPCs;
-using ssm.Thorium.Enchantments;
 
 namespace ssm
 {
@@ -157,19 +151,6 @@ namespace ssm
 
                     case PacketID.HealthDataSync:
                         HandleHealthDataSync(reader, whoAmI);
-                        break;
-                    case PacketID.RequestCyberOrbs:
-                        if (Main.netMode == NetmodeID.Server)
-                        {
-                            byte p = reader.ReadByte();
-                            int multiplier = reader.ReadByte();
-                            int n = NPC.NewNPC(NPC.GetBossSpawnSource(p), (int)Main.player[p].Center.X, (int)Main.player[p].Center.Y, ModContent.NPCType<CyberneticOrb>(), 0,
-                                p, 0f, multiplier, 0);
-                            if (n != Main.maxNPCs)
-                            {
-                                NetMessage.SendData(MessageID.SyncNPC, -1, -1, null, n);
-                            }
-                        }
                         break;
                 }
             }
@@ -459,11 +440,8 @@ namespace ssm
             DebuffsList = new List<int>();
 
             int enabledCount = 0;
-            if (ModCompatibility.SpiritMod.Loaded) enabledCount++;
-            if (ModCompatibility.Thorium.Loaded) enabledCount++;
             if (ModCompatibility.Calamity.Loaded) enabledCount++;
-            if (ModCompatibility.SacredTools.Loaded) enabledCount++;
-            if (ModCompatibility.Redemption.Loaded || ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded) enabledCount++;
+            if (ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded) enabledCount++;
             shouldUseMacro = enabledCount >= 2;
 
             _bossSummonUI = new UserInterface();
@@ -472,26 +450,6 @@ namespace ssm
             Instance = this;
             OS = OSType();
 
-            if (ModLoader.TryGetMod("ThoriumMod", out Mod tor))
-            {
-                ThoriumCaughtNpcs.ThoriumRegisterItems();
-            }
-            if (ModLoader.TryGetMod("SacredTools", out Mod soa))
-            {
-                SoACaughtNpcs.SoARegisterItems();
-            }
-            if (ModLoader.TryGetMod("Redemption", out Mod red))
-            {
-                RedemptionCaughtNpcs.RedemptionRegisterItems();
-            }
-        //    if (ModLoader.TryGetMod("gunrightsmod", out Mod grm))
-        //    {
-        //        gunrightsmodCaughtNpcs.gunrightsmodRegisterItems();
-        //    }
-            if (ModLoader.TryGetMod("SpiritMod", out Mod spr))
-            {
-                SpiritModCaughtNpcs.SpiritModRegisterItems();
-            }
             if (ModLoader.TryGetMod("AlchemistNPC", out Mod alch))
             {
                 AlchemistNPCCaughtNpcs.AlchemistNPCCaughtNpcsRegisterItems();
@@ -538,16 +496,6 @@ namespace ssm
                 wikithis.Call("AddModURL", this, "https://terrariamods.wiki.gg/wiki/Community_Souls_Expansion/{}");
             }
             BossChecklistCompatibility();
-            if (ModCompatibility.Thorium.Loaded)
-            {
-                //bclChanges.Union(ThoriumBCLEdits.BossChecklistValues);
-                PostSetupContentThorium.PostSetupContent_Thorium();
-            }
-            if (ModCompatibility.SacredTools.Loaded)
-            {
-                //bclChanges.Union(SoABCLEdits.BossChecklistValues);
-                PostSetupContentSoA.PostSetupContent_Thorium();
-            }
 
             if (ModCompatibility.BossChecklist.Loaded)
             {

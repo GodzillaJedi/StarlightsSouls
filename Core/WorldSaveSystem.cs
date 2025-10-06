@@ -8,8 +8,6 @@ namespace ssm.Systems
     public class WorldSaveSystem : ModSystem
     {
         public static bool talk = false;
-
-        //i am dumb or soa don't have this
         public static bool downedNihilus = false;
 
         public static bool downedEch = false;

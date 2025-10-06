@@ -11,7 +11,6 @@ using FargowiltasSouls;
 using ssm.Core;
 using ssm.Content.Items.Summons;
 using ssm.CrossMod.CraftingStations;
-using ThoriumMod.Items.ThrownItems;
 
 namespace ssm.Content.NPCs
 {
@@ -140,7 +139,7 @@ namespace ssm.Content.NPCs
             //    dialogue.Add("");
             //}
 
-            if (ModCompatibility.SacredTools.Loaded && ModCompatibility.Calamity.Loaded && ModCompatibility.Thorium.Loaded && ModCompatibility.Homeward.Loaded)
+            if (ModCompatibility.Calamity.Loaded && ModCompatibility.Homeward.Loaded)
             {
                 dialogue.Add("Go touch some grass.");
             }
@@ -162,8 +161,6 @@ namespace ssm.Content.NPCs
                 npcShop.Add(new Item(ModContent.ItemType<GunterasFruit>()) { shopCustomPrice = Item.buyPrice(copper: 400000) });
                 npcShop.Add(new Item(ModContent.ItemType<FutureSigil>()) { shopCustomPrice = Item.buyPrice(copper: 400000) });
             }
-
-            npcShop.Add(new Item(ModContent.ItemType<MutantsForgeItem>()) { shopCustomPrice = Item.buyPrice(copper: 40000000) }, new Condition("Downed Mutant", () => WorldSavingSystem.DownedMutant));
             npcShop.Add(new Item(ModContent.ItemType<TruffleWormEX>()) { shopCustomPrice = Item.buyPrice(copper: 400000) });
 
             npcShop.Register();

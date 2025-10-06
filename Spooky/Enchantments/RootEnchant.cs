@@ -10,7 +10,7 @@ using Spooky.Content.Items.SpiderCave.Armor;
 namespace ssm.Spooky.Enchantments
 {
     [ExtendsFromMod(ModCompatibility.Spooky.Name)]
-    [JITWhenModsEnabled(ModCompatibility.Thorium.Name)]
+    [JITWhenModsEnabled(ModCompatibility.Spooky.Name)]
     public class RootEnchant : BaseEnchant
     {
         public override bool IsLoadingEnabled(Mod mod)

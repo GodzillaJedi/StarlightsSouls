@@ -4,7 +4,6 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using ssm.Core;
 using FargowiltasSouls.Content.Items.Accessories.Enchantments;
-using ThoriumMod;
 using Polarities.Content.Items.Armor.Classless.PreHardmode.AerogelArmor;
 
 namespace ssm.Polarities.Enchantments

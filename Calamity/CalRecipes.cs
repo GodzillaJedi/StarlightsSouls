@@ -16,7 +16,6 @@ using ssm.Content.Items.DevItems;
 using FargowiltasSouls.Content.Items.Materials;
 using System;
 using FargowiltasSouls.Core.Systems;
-using SacredTools.Content.Items.Materials;
 using ssm.Content.Items.Materials;
 using ssm.Calamity.Addons;
 using FargowiltasSouls.Content.Items.Ammos;

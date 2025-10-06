@@ -18,6 +18,10 @@ namespace ssm.Content.Items.Consumables
         {
             Item.ResearchUnlockCount = 30;
         }
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return CSEConfig.Instance.ExperimentalContent;
+        }
 
         public override void SetDefaults()
         {
@@ -62,19 +66,13 @@ namespace ssm.Content.Items.Consumables
         {
             Recipe recipe = CreateRecipe(50);
 
-            if (ModCompatibility.SacredTools.Loaded)
-            {
-                ModCompatibility.SacredTools.Mod.TryFind<ModItem>("AsthraltiteHealingPotion", out ModItem soa);
-                recipe.AddIngredient(soa ,50);
-            }
-
-            if (!ModCompatibility.SacredTools.Loaded && ModCompatibility.Calamity.Loaded)
+            if (ModCompatibility.Calamity.Loaded)
             {
                 ModCompatibility.Calamity.Mod.TryFind<ModItem>("OmegaHealingPotion", out ModItem cal);
                 recipe.AddIngredient(cal, 50);
             }
 
-            if (!ModCompatibility.SacredTools.Loaded && !ModCompatibility.Calamity.Loaded)
+            if (!ModCompatibility.Calamity.Loaded)
             {
                 recipe.AddIngredient(ItemID.SuperHealingPotion, 50);
             }

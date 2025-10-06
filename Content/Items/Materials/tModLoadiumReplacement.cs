@@ -18,10 +18,6 @@ namespace ssm.Content.Items.Materials
             {
                 Recipe recipe = Main.recipe[i];
 
-                if (recipe.createItem.type == ModContent.ItemType<MutantsForgeItem>() ||
-                    recipe.createItem.type == ModContent.ItemType<tModLoadiumBar>() ||
-                    recipe.createItem.type == ModContent.ItemType<UltimateHealingPotion>())
-                    continue;
 
                 bool hasEternal = false;
 

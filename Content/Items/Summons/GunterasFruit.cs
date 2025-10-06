@@ -11,7 +11,10 @@ namespace ssm.Content.Items.Summons
         public override int NPCType => ModContent.NPCType<Guntera>();
 
         public override string NPCName => "Guntera";
-
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return CSEConfig.Instance.SecretBosses;
+        }
         public override void SetStaticDefaults()
         {
             base.SetStaticDefaults();

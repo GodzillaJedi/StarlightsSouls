@@ -22,42 +22,16 @@ namespace ssm.CrossMod.SoulsRecipes
 
                 if (recipe.HasResult(ModContent.ItemType<SnipersSoul>()))
                 {
-                    if (ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("DolphinGun"), 1); recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("VortexSigil"), 1); }
                     if (ModCompatibility.Homeward.Loaded) { recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("WalnutOnFire"), 1); recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("Duality"), 1); recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("TheBatter"), 1); recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("CrossbowScope"), 1); recipe.RemoveIngredient(ItemID.ReconScope); }
-                    if (ModCompatibility.Redemption.Loaded) { recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("SwarmerCannon"), 1); recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("MutagenRanged"), 1); recipe.RemoveIngredient(ModContent.ItemType<SharpshootersEssence>()); }
                     if (ModCompatibility.Clamity.Loaded) { recipe.AddIngredient(ModCompatibility.Clamity.Mod.Find<ModItem>("RoseBow"), 1); }
-                    if (ModCompatibility.Thorium.Loaded) { recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("OmniCannon"), 1); recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("OmniBow"), 1); }
                 }
                 if (ModCompatibility.Calamity.Loaded)
                 {
-                    if (recipe.HasResult(ModCompatibility.Calamity.Mod.Find<ModItem>("ElementalQuiver")))
-                    {
-                        if (ModCompatibility.Thorium.Loaded)
-                        {
-                            if (!recipe.HasIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("TerrariumCore")))
-                            {
-                                recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("TerrariumCore"), 3);
-                            }
-                        }
-                        if (ModCompatibility.Vitality.Loaded) { recipe.AddIngredient(ModCompatibility.Vitality.Mod.Find<ModItem>("CompoundQuiver"), 1); }
-                        //if (ModCompatibility.Homeward.Loaded) { recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("StarQuiver"), 1); }
-                        //if (ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("LuminousEnergy"), 5); }
-                    }
                 }
                 if (ModCompatibility.Homeward.Loaded)
                 {
                     if (recipe.HasResult(ModCompatibility.Homeward.Mod.Find<ModItem>("CrossbowScope")))
                     {
-                        if (ModCompatibility.Redemption.Loaded) { recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("XeniumAlloy"), 3); }
-                        if (ModCompatibility.Thorium.Loaded && !ModCompatibility.Calamity.Loaded) { recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("DeathEssence"), 3); }
-                    }
-                }
-                if (ModCompatibility.SacredTools.Loaded)
-                {
-                    if (recipe.HasResult(ModCompatibility.SacredTools.Mod.Find<ModItem>("VortexSigil")))
-                    {
-                        if (ModCompatibility.Redemption.Loaded) { recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("XeniumAlloy"), 3); }
-                        if (ModCompatibility.Homeward.Loaded) { recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("BullseyeBadge"), 1); recipe.RemoveIngredient(ItemID.RangerEmblem); }
                     }
                 }
             }
@@ -100,10 +74,6 @@ namespace ssm.CrossMod.SoulsRecipes
                 {
                     tooltips.Insert(6, new TooltipLine(Mod, "mayo1", Language.GetTextValue(key + "HWJSniper")));
                     tooltips.Insert(6, new TooltipLine(Mod, "mayo2", Language.GetTextValue(key + "HWJStarSniper")));
-                }
-                if (ModCompatibility.SacredTools.Loaded)
-                {
-                    tooltips.Insert(6, new TooltipLine(Mod, "mayo2", Language.GetTextValue(key + "SoASniper")));
                 }
             }
             if (ModCompatibility.Calamity.Loaded)

@@ -12,13 +12,11 @@ using Spooky.Content.Items.Cemetery;
 using Spooky.Content.Projectiles.Cemetery;
 using FargowiltasSouls.Core.AccessoryEffectSystem;
 using ssm.Content.SoulToggles;
-using ssm.Thorium.Enchantments;
-using static ssm.Thorium.Enchantments.BiotechEnchant;
 
 namespace ssm.Spooky.Enchantments
 {
     [ExtendsFromMod(ModCompatibility.Spooky.Name)]
-    [JITWhenModsEnabled(ModCompatibility.Thorium.Name)]
+    [JITWhenModsEnabled(ModCompatibility.Spooky.Name)]
     public class SpiritHorsemenEnchant : BaseEnchant
     {
         public override bool IsLoadingEnabled(Mod mod)

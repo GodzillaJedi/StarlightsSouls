@@ -15,6 +15,10 @@ namespace ssm.Content.Items.Materials
             Item.rare = 11;
             Item.value = Item.sellPrice(0, 4, 0, 0);
         }
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return CSEConfig.Instance.SecretBosses;
+        }
 
         public override void ModifyTooltips(List<TooltipLine> list)
         {

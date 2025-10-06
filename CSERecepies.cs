@@ -39,7 +39,7 @@ namespace ssm
             for (int i = 0; i < Recipe.numRecipes; i++)
             {
                 Recipe recipe = Main.recipe[i];
-                if (!ModCompatibility.Crossmod.Loaded && ModCompatibility.SacredTools.Loaded && (recipe.HasResult<ArchWizardsSoul>() || recipe.HasResult<BerserkerSoul>() || recipe.HasResult<ConjuristsSoul>() || recipe.HasResult<ColossusSoul>()) && !recipe.HasResult<AbomEnergy>())
+                if (!ModCompatibility.Crossmod.Loaded && (recipe.HasResult<ArchWizardsSoul>() || recipe.HasResult<BerserkerSoul>() || recipe.HasResult<ConjuristsSoul>() || recipe.HasResult<ColossusSoul>()) && !recipe.HasResult<AbomEnergy>())
                 {
                     recipe.AddIngredient<AbomEnergy>(10);
                 }
@@ -78,25 +78,13 @@ namespace ssm
                             recipe.AddIngredient(Mod.Find<ModItem>("MacroverseSoul"), 1);
                             recipe.RemoveIngredient(ModContent.ItemType<TerrariaSoul>());
                         }
-                        else if (ModCompatibility.Redemption.Loaded || ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded)
+                        else if (ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded)
                         {
                             recipe.AddIngredient(Mod.Find<ModItem>("MicroverseSoul"), 1);
                         }
                         if (ModCompatibility.Calamity.Loaded && ModCompatibility.Crossmod.Loaded && !ssm.shouldUseMacro)
                         {
                             recipe.AddIngredient(Mod.Find<ModItem>("CalamitySoul"), 1);
-                        }
-                        if (ModCompatibility.SacredTools.Loaded && !ssm.shouldUseMacro)
-                        {
-                            recipe.AddIngredient(Mod.Find<ModItem>("SoASoul"), 1);
-                        }
-                        if (ModCompatibility.SpiritMod.Loaded && !ssm.shouldUseMacro)
-                        {
-                            recipe.AddIngredient(Mod.Find<ModItem>("SpiritSoul"), 1);
-                        }
-                        if (ModCompatibility.Thorium.Loaded && !ssm.shouldUseMacro)
-                        {
-                            recipe.AddIngredient(Mod.Find<ModItem>("ThoriumSoul"), 1);
                         }
                     }
 

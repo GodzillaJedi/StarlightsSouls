@@ -15,7 +15,7 @@ namespace ssm.Content.Items.Accessories
     {
         public override bool IsLoadingEnabled(Mod mod)
         {
-            return (ModCompatibility.Redemption.Loaded || ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded);
+            return (ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded);
         }
         public override void SetStaticDefaults()
         {
@@ -45,11 +45,6 @@ namespace ssm.Content.Items.Accessories
                 tooltips.Add(new TooltipLine(Mod, "Polarities1", Language.GetTextValue("Mods.ssm.Items.MicroverseSoul.Polarities1")));
                 tooltips.Add(new TooltipLine(Mod, "Polarities1", Language.GetTextValue("Mods.ssm.Items.MicroverseSoul.Polarities2")));
             }
-            if (ModCompatibility.Redemption.Loaded)
-            {
-                tooltips.Add(new TooltipLine(Mod, "Redemption1", Language.GetTextValue("Mods.ssm.Items.MicroverseSoul.Redemption1")));
-                tooltips.Add(new TooltipLine(Mod, "Redemption1", Language.GetTextValue("Mods.ssm.Items.MicroverseSoul.Redemption2")));
-            }
             if (ModCompatibility.Homeward.Loaded)
             {
                 tooltips.Add(new TooltipLine(Mod, "Homeward1", Language.GetTextValue("Mods.ssm.Items.MicroverseSoul.Homeward1")));
@@ -69,11 +64,6 @@ namespace ssm.Content.Items.Accessories
                 ModContent.Find<ModItem>(Mod.Name, "SpacetimeForce").UpdateAccessory(player, false);
                 ModContent.Find<ModItem>(Mod.Name, "WildernessForce").UpdateAccessory(player, false);
             }
-            if (ModCompatibility.Redemption.Loaded && CSEConfig.Instance.Redemption)
-            {
-                ModContent.Find<ModItem>(Mod.Name, "AdvancementForce").UpdateAccessory(player, false);
-                ModContent.Find<ModItem>(Mod.Name, "AchivementForce").UpdateAccessory(player, false);
-            }
             if (ModCompatibility.Homeward.Loaded && CSEConfig.Instance.Homeward)
             {
                 //ModContent.Find<ModItem>(Mod.Name, "AdvancementForce").UpdateAccessory(player, false);
@@ -92,15 +82,6 @@ namespace ssm.Content.Items.Accessories
             if (!ModCompatibility.Calamity.Loaded)
             {
                 recipe.AddIngredient<AbomEnergy>(10);
-            }
-            if (ModCompatibility.SacredTools.Loaded)
-            {
-                recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("EmberOfOmen"), 5);
-            }
-            if (ModCompatibility.Redemption.Loaded && CSEConfig.Instance.Redemption)
-            {
-                recipe.AddIngredient(ModContent.Find<ModItem>(Mod.Name, "AdvancementForce"), 1);
-                recipe.AddIngredient(ModContent.Find<ModItem>(Mod.Name, "AchivementForce"), 1);
             }
             if (ModCompatibility.Spooky.Loaded && CSEConfig.Instance.Spooky)
             {

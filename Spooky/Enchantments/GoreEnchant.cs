@@ -17,7 +17,7 @@ using static ssm.Spooky.Enchantments.LivingFleshEnchant;
 namespace ssm.Spooky.Enchantments
 {
     [ExtendsFromMod(ModCompatibility.Spooky.Name)]
-    [JITWhenModsEnabled(ModCompatibility.Thorium.Name)]
+    [JITWhenModsEnabled(ModCompatibility.Spooky.Name)]
     public class GoreEnchant : BaseEnchant
     {
         public override bool IsLoadingEnabled(Mod mod)

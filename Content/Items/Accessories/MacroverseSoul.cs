@@ -21,11 +21,8 @@ namespace ssm.Content.Items.Accessories
         public override bool IsLoadingEnabled(Mod mod)
         {
             int enabledCount = 0;
-            if (ModCompatibility.SpiritMod.Loaded) enabledCount++;
-            if (ModCompatibility.Thorium.Loaded) enabledCount++;
             if (ModCompatibility.Calamity.Loaded) enabledCount++;
-            if (ModCompatibility.SacredTools.Loaded) enabledCount++;
-            if (ModCompatibility.Redemption.Loaded || ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded) enabledCount++;
+            if (ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded) enabledCount++;
             return enabledCount >= 2;
         }
         public override string Texture => "ssm/Content/Items/SwarmDeactivatorDebug";
@@ -61,7 +58,7 @@ namespace ssm.Content.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            if (ModCompatibility.Redemption.Loaded || ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded)
+            if (ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded)
             {
                 ModContent.Find<ModItem>(Mod.Name, "MicroverseSoul").UpdateAccessory(player, false);
             }
@@ -80,19 +77,6 @@ namespace ssm.Content.Items.Accessories
             {
                 ModContent.Find<ModItem>(Mod.Name, "SpacetimeForce").UpdateAccessory(player, false);
                 ModContent.Find<ModItem>(Mod.Name, "WildernessForce").UpdateAccessory(player, false);
-            }
-            if (ModCompatibility.Redemption.Loaded && CSEConfig.Instance.Redemption)
-            {
-                ModContent.Find<ModItem>(Mod.Name, "AdvancementForce").UpdateAccessory(player, false);
-                ModContent.Find<ModItem>(Mod.Name, "AchivementForce").UpdateAccessory(player, false);
-            }
-            if (ModCompatibility.SacredTools.Loaded && CSEConfig.Instance.SacredTools)
-            {
-                ModContent.Find<ModItem>(Mod.Name, "SoASoul").UpdateAccessory(player, false);
-            }
-            if (ModCompatibility.Thorium.Loaded && CSEConfig.Instance.Thorium)
-            {
-                ModContent.Find<ModItem>(Mod.Name, "ThoriumSoul").UpdateAccessory(player, false);
             }
         }
 
@@ -113,23 +97,6 @@ namespace ssm.Content.Items.Accessories
             {
                 recipe.AddIngredient(Mod.Find<ModItem>("CalamitySoul"), 1);
             }
-            if (ModCompatibility.Thorium.Loaded && CSEConfig.Instance.Thorium)
-            {
-                recipe.AddIngredient(Mod.Find<ModItem>("ThoriumSoul"), 1);
-            }
-            if (ModCompatibility.SacredTools.Loaded && CSEConfig.Instance.SacredTools)
-            {
-                recipe.AddIngredient(Mod.Find<ModItem>("SoASoul"), 1);
-            }
-            if (ModCompatibility.Spirit.Loaded && CSEConfig.Instance.SpiritMod)
-            {
-                recipe.AddIngredient(Mod.Find<ModItem>("SpiritSoul"), 1);
-            }
-            if (ModCompatibility.Redemption.Loaded || ModCompatibility.Polarities.Loaded || ModCompatibility.Spooky.Loaded || ModCompatibility.Homeward.Loaded)
-            {
-                recipe.AddIngredient(Mod.Find<ModItem>("MicroverseSoul"), 1);
-            }
-
             recipe.AddTile(ModContent.TileType<CrucibleCosmosSheet>());
             recipe.Register();
         }

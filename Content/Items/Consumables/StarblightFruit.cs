@@ -51,14 +51,6 @@ namespace ssm.Content.Items.Consumables
         {
             Recipe recipe = CreateRecipe(1);
 
-            if (ModCompatibility.SacredTools.Loaded)
-            {
-                //ModCompatibility.SacredTools.Mod.TryFind<ModItem>("ComboPotion", out ModItem soa);
-                ModCompatibility.SacredTools.Mod.TryFind<ModItem>("EmberOfOmen", out ModItem soa2);
-                //recipe.AddIngredient(soa, 50);
-                recipe.AddIngredient(soa2, 5);
-            }
-
             //if (ModCompatibility.AlchNPCs.Loaded)
             //{
             //    ModCompatibility.AlchNPCs.Mod.TryFind<ModItem>("ExplorerCombination", out ModItem alch1);

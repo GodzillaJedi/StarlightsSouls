@@ -11,12 +11,10 @@ namespace ssm.Content.Items.Summons
         public override int NPCType => ModContent.NPCType<CeilingOfMoonLord>();
 
         public override string NPCName => "CeilingOfMoonLord";
-
-        public override void SetStaticDefaults()
+        public override bool IsLoadingEnabled(Mod mod)
         {
-            base.SetStaticDefaults();
+            return CSEConfig.Instance.SecretBosses;
         }
-
         public override void AddRecipes()
         {
             CreateRecipe()

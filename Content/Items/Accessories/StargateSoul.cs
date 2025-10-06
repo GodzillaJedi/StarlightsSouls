@@ -181,18 +181,6 @@ namespace ssm.Content.Items.Accessories
             {
                 ModContent.Find<ModItem>(Mod.Name, "SolynsSigil").UpdateAccessory(player, false);
             }
-
-            if (ModCompatibility.SacredTools.Loaded)
-            {
-                ModContent.Find<ModItem>(Mod.Name, "SoASoul").UpdateAccessory(player, false);
-            }
-
-            if (ModCompatibility.Thorium.Loaded)
-            {
-                ModContent.Find<ModItem>(Mod.Name, "ThoriumSoul").UpdateAccessory(player, false);
-                ModContent.Find<ModItem>(Mod.Name, "BardSoul").UpdateAccessory(player, false);
-                ModContent.Find<ModItem>(Mod.Name, "GuardianAngelsSoul").UpdateAccessory(player, false);
-            }
         }
 
         public override void AddRecipes()
