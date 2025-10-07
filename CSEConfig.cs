@@ -61,18 +61,7 @@ namespace ssm
         [ReloadRequired]
         //[BackgroundColor(60, 200, 60, 192)]
         [DefaultValue(true)]
-        public bool Thorium { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
         public bool EternityForce { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool SacredTools { get; set; }
-
         [ReloadRequired]
         //[BackgroundColor(60, 200, 60, 192)]
         [DefaultValue(true)]
@@ -82,12 +71,6 @@ namespace ssm
         //[BackgroundColor(60, 200, 60, 192)]
         [DefaultValue(true)]
         public bool Homeward { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool Redemption { get; set; }
-
         [ReloadRequired]
         //[BackgroundColor(60, 200, 60, 192)]
         [DefaultValue(true)]
@@ -101,34 +84,9 @@ namespace ssm
         [ReloadRequired]
         //[BackgroundColor(60, 200, 60, 192)]
         [DefaultValue(true)]
-        public bool TerMerica { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool SpiritMod { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
         public bool Consolaria { get; set; }
 
         [Header("EmodeAccesLoad")]
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool EmodeThorium { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool EmodeRedemption { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool EmodeSoA { get; set; }
 
         [ReloadRequired]
         //[BackgroundColor(60, 200, 60, 192)]
@@ -140,40 +98,9 @@ namespace ssm
         [ReloadRequired]
         //[BackgroundColor(60, 200, 60, 192)]
         [DefaultValue(true)]
-        public bool EmodeThoriumW { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool EmodeRedemptionW { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool EmodeSoAW { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
         public bool EmodeHWJW { get; set; }
 
         [Header("BossRush")]
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool ThoriumBR { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool RedemptionBR { get; set; }
-
-        [ReloadRequired]
-        //[BackgroundColor(60, 200, 60, 192)]
-        [DefaultValue(true)]
-        public bool SoABR { get; set; }
-
         [ReloadRequired]
         //[BackgroundColor(60, 200, 60, 192)]
         [DefaultValue(true)]

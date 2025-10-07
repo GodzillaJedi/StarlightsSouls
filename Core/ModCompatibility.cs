@@ -51,12 +51,6 @@ public static class ModCompatibility
         public static bool Loaded => ModLoader.HasMod(Name);
         public static Mod Mod => ModLoader.GetMod(Name);
     }
-    public static class ThoriumRework
-    {
-        public const string Name = "ThoriumRework";
-        public static bool Loaded => ModLoader.HasMod(Name);
-        public static Mod Mod => ModLoader.GetMod(Name);
-    }
     public static class Inheritance
     {
         public const string Name = "CalamityInheritance";
@@ -72,12 +66,6 @@ public static class ModCompatibility
     public static class CatTech
     {
         public const string Name = "CatTech";
-        public static bool Loaded => ModLoader.HasMod(Name);
-        public static Mod Mod => ModLoader.GetMod(Name);
-    }
-    public static class SBH
-    {
-        public const string Name = "SoABardHealer";
         public static bool Loaded => ModLoader.HasMod(Name);
         public static Mod Mod => ModLoader.GetMod(Name);
     }
@@ -190,12 +178,6 @@ public static class ModCompatibility
         public static bool Loaded => ModLoader.HasMod(Name);
         public static FargowiltasSouls.FargowiltasSouls Mod => ModLoader.GetMod(Name) as FargowiltasSouls.FargowiltasSouls;
     }
-    public static class Thorium
-    {
-        public const string Name = "ThoriumMod";
-        public static bool Loaded => ModLoader.HasMod(Name);
-        public static Mod Mod => ModLoader.GetMod(Name);
-    }
     public static class Spirit
     {
         public const string Name = "SpititMod";
@@ -222,18 +204,6 @@ public static class ModCompatibility
         
         public static ModNPC GooBoss = Mod.Find<ModNPC>("Goozma");
     }
-    public static class Redemption
-    {
-        public const string Name = "Redemption";
-        public static bool Loaded => ModLoader.HasMod(Name);
-        public static Mod Mod => ModLoader.GetMod(Name);
-    }
-    public static class SacredTools
-    {
-        public const string Name = "SacredTools";
-        public static bool Loaded => ModLoader.HasMod(Name);
-        public static Mod Mod => ModLoader.GetMod(Name);
-    }
     public static class Catalyst
     {
         public const string Name = "CatalystMod";
@@ -252,24 +222,12 @@ public static class ModCompatibility
         public static bool Loaded => ModLoader.HasMod(Name);
         public static Mod Mod => ModLoader.GetMod(Name);
     }   
-    public static class Gunrightsmod
-    {
-        public const string Name = "gunrightsmod";
-        public static bool Loaded => ModLoader.HasMod(Name);
-        public static Mod Mod => ModLoader.GetMod(Name);
-    }
     public static class Infernum
     {
         public const string Name = "InfernumMode";
         public static bool Loaded => ModLoader.HasMod(Name);
         public static Mod Mod => ModLoader.GetMod(Name);
         public static bool InfernumDifficulty => Loaded && (bool)Mod.Call("GetInfernumActive");
-    }
-    public static class SpiritMod
-    {
-        public const string Name = "SpiritMod";
-        public static bool Loaded => ModLoader.HasMod(Name);
-        public static Mod Mod => ModLoader.GetMod(Name);
     }
     public static class Consolaria
     {

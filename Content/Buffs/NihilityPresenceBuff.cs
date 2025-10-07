@@ -5,8 +5,6 @@ using FargowiltasSouls;
 
 namespace ssm.Content.Buffs
 {
-    //[JITWhenModsEnabled(ModCompatibility.SacredTools.Name)]
-    //[ExtendsFromMod(ModCompatibility.SacredTools.Name)]
     public class NihilityPresenceBuff : ModBuff
     {
         public override void SetStaticDefaults()

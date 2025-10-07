@@ -8,7 +8,6 @@
 		
 	</PropertyGroup>
 	<ItemGroup>
-		<InternalsVisibleTo Include="SacredTools" />
 		<InternalsVisibleTo Include="ReLogic" />
 		<InternalsVisibleTo Include="FNA" />
 		<InternalsVisibleTo Include="tModLoader" />
@@ -75,9 +74,6 @@
 	  <Reference Include="FargowiltasSouls">
 	    <HintPath>lib\FargowiltasSouls.dll</HintPath>
 	  </Reference>
-	  <Reference Include="gunrightsmod">
-	    <HintPath>lib\gunrightsmod.dll</HintPath>
-	  </Reference>
 	  <Reference Include="Luminance">
 	    <HintPath>lib\Luminance.dll</HintPath>
 	  </Reference>
@@ -90,26 +86,11 @@
 	  <Reference Include="Polarities">
 	    <HintPath>lib\Polarities.dll</HintPath>
 	  </Reference>
-	  <Reference Include="Redemption">
-	    <HintPath>lib\Redemption.dll</HintPath>
-	  </Reference>
-	  <Reference Include="SacredTools">
-	    <HintPath>Libraries\SacredTools.dll</HintPath>
-	  </Reference>
-	  <Reference Include="SpiritMod">
-	    <HintPath>..\..\ModReader\SpiritMod\SpiritMod.dll</HintPath>
-	  </Reference>
 	  <Reference Include="Spooky">
 	    <HintPath>lib\Spooky.dll</HintPath>
 	  </Reference>
 	  <Reference Include="SubworldLibrary">
 	    <HintPath>Libraries\SubworldLibrary.dll</HintPath>
-	  </Reference>
-	  <Reference Include="ThoriumRework">
-	    <HintPath>lib\ThoriumRework.dll</HintPath>
-	  </Reference>
-	  <Reference Include="ThoriumMod">
-	    <HintPath>lib\ThoriumMod.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 

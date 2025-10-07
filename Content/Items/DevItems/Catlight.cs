@@ -8,7 +8,6 @@ using Microsoft.Xna.Framework;
 using Terraria.Audio;
 using FargowiltasSouls.Content.Items.Materials;
 using ssm.Calamity.Addons;
-using ssm.Thorium.Items;
 using ssm.Core;
 using FargowiltasSouls.Content.Bosses.MutantBoss;
 using FargowiltasSouls.Core.Systems;
@@ -183,22 +182,9 @@ namespace ssm.Content.Items.DevItems
             //    recipe.AddIngredient(ModCompatibility.Calamity.Mod.Find<ModItem>("ShadowspecBar"), 1);
             //    recipe.AddIngredient(ModCompatibility.Calamity.Mod.Find<ModItem>("MiracleMatter"), 1);
             //}
-            //if (ModCompatibility.SacredTools.Loaded)
-            //{
-            //    recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("EmberOfOmen"), 1);
-            //}
-
             //if (ModCompatibility.Homeward.Loaded && !ModCompatibility.Calamity.Loaded)
             //{
             //    recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("FinalBar"), 1);
-            //}
-            //if (ModCompatibility.Thorium.Loaded && !ModCompatibility.Calamity.Loaded)
-            //{
-            //    recipe.AddIngredient<DreamEssence>(1);
-            //}
-            //if (ModCompatibility.Redemption.Loaded && !ModCompatibility.Calamity.Loaded)
-            //{
-            //    recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("LifeFragment"), 1);
             //}
             //if (!ModCompatibility.Calamity.Loaded)
             //{

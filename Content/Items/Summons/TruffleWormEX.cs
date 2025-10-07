@@ -12,7 +12,10 @@ namespace ssm.Content.Items.Summons
     public class TruffleWormEX : ModItem
     {
         public override string Texture => "Terraria/Images/Item_2673";
-
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return CSEConfig.Instance.SecretBosses;
+        }
         public override void SetDefaults()
         {
             Item.maxStack = 20;

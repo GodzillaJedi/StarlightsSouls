@@ -14,7 +14,6 @@ using FargowiltasSouls.Content.Bosses.MutantBoss;
 using ssm.Core;
 using BombusApisBee.BeeDamageClass;
 using CalamityMod.CalPlayer;
-using ThoriumMod.Utilities;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
 using Terraria.DataStructures;
@@ -193,7 +192,6 @@ namespace ssm
             if (Player.FargoSouls().MutantSetBonusItem != null)
             {
                 Player.CSE().throwerVelocity += 0.3f;
-                if (ModCompatibility.Thorium.Loaded) { BardAndHealer(Player, 1000, 0, 1, 2f, 100, 50, 2, 1000); }
                 if (ModCompatibility.BeekeeperClass.Loaded) { Beekeeper(Player, 30); }
                 if (ModCompatibility.Calamity.Loaded) { ThrowerCal(Player, 5); }
             }
@@ -201,7 +199,6 @@ namespace ssm
             if (Player.FargoSouls().StyxSet)
             {
                 Player.CSE().throwerVelocity += 0.2f;
-                if (ModCompatibility.Thorium.Loaded) { BardAndHealer(Player, 10, 0, 0.5f, 1f, 30, 15, 2, 600); }
                 if (ModCompatibility.BeekeeperClass.Loaded) { Beekeeper(Player, 20); }
                 if (ModCompatibility.Calamity.Loaded) { ThrowerCal(Player, 2); }
             }
@@ -209,7 +206,6 @@ namespace ssm
             if (Player.FargoSouls().GaiaSet)
             {
                 Player.CSE().throwerVelocity += 0.1f;
-                if (ModCompatibility.Thorium.Loaded) { BardAndHealer(Player, 1, 200, 0.3f, 0.5f, 20, 10, 2, 300); }
                 if (ModCompatibility.BeekeeperClass.Loaded) { Beekeeper(Player, 20); }
                 if (ModCompatibility.Calamity.Loaded) { ThrowerCal(Player, 1.1f); }
             }
@@ -217,7 +213,6 @@ namespace ssm
             if (Player.FargoSouls().NekomiSet)
             {
                 Player.CSE().throwerVelocity += 0.05f;
-                if (ModCompatibility.Thorium.Loaded) { BardAndHealer(Player, 0.5f, 100, 0.1f, 0.25f, 10, 5, 1, 180); }
                 if (ModCompatibility.BeekeeperClass.Loaded) { Beekeeper(Player, 10); }
                 if (ModCompatibility.Calamity.Loaded) { ThrowerCal(Player, 0.7f); Player.GetDamage<GenericDamageClass>() += 0.05f; }
             }
@@ -274,20 +269,6 @@ namespace ssm
             {
                 Main.NewText(Language.GetTextValue($"Mods.ssm.Message.NoThrower"), Color.LimeGreen);
             }
-            if (!ModLoader.TryGetMod("ThoriumRework", out Mod _) && ModLoader.TryGetMod("ThoriumMod", out Mod _))
-            {
-                Main.NewText(Language.GetTextValue($"Mods.ssm.Message.NoRework"), Color.LimeGreen);
-            }
-            if (ModCompatibility.Calamity.Loaded && ModCompatibility.Thorium.Loaded && (!ModLoader.TryGetMod("WHummusMultiModBalancing", out Mod _) || !ModCompatibility.IEoR.Loaded))
-            {
-                Main.NewText(Language.GetTextValue($"Mods.ssm.Message.NoBalancing"), Color.LimeGreen);
-            }
-
-            //if (!ModLoader.TryGetMod("SoABardHealer", out Mod _) && ModLoader.TryGetMod("SoA", out Mod _) && ModLoader.TryGetMod("ThoriumMod", out Mod _))
-            //{
-            //    Main.NewText(Language.GetTextValue($"Mods.ssm.Message.NoSoABardHealer1"), Color.Purple);
-            //    Main.NewText(Language.GetTextValue($"Mods.ssm.Message.NoSoABardHealer2"), Color.Purple);
-            //}
         }
 
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
@@ -364,21 +345,6 @@ namespace ssm
             //    }
             //}
         }
-
-
-        [JITWhenModsEnabled(ModCompatibility.Thorium.Name)]
-        public void BardAndHealer(Player Player, float bonus1, int bonus2, float bonus3, float bonus4, int bonus5, int bonus6, int bonus7, short bonus8)
-        {
-            Player.GetThoriumPlayer().bardBuffDuration += bonus8;
-            Player.GetThoriumPlayer().techPointsMax += bonus7;
-            Player.GetThoriumPlayer().throwerExhaustionRegenBonus += bonus1;
-            Player.GetThoriumPlayer().throwerExhaustionMax += bonus2;
-            Player.GetThoriumPlayer().bardResourceDropBoost += bonus3;
-            Player.GetThoriumPlayer().inspirationRegenBonus += bonus4;
-            Player.GetThoriumPlayer().bardResourceMax2 += bonus5;
-            Player.GetThoriumPlayer().healBonus += bonus6;
-        }
-
 
         [JITWhenModsEnabled(ModCompatibility.BeekeeperClass.Name)]
         public void Beekeeper(Player Player, int bonus)

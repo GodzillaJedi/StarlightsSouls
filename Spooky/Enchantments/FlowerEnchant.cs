@@ -14,7 +14,7 @@ using ssm.Content.SoulToggles;
 namespace ssm.Spooky.Enchantments
 {
     [ExtendsFromMod(ModCompatibility.Spooky.Name)]
-    [JITWhenModsEnabled(ModCompatibility.Thorium.Name)]
+    [JITWhenModsEnabled(ModCompatibility.Spooky.Name)]
     public class FlowerEnchant : BaseEnchant
     {
         public override bool IsLoadingEnabled(Mod mod)

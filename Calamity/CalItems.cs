@@ -61,10 +61,6 @@ namespace ssm.Calamity
             {
                 entity.damage = (int)(entity.damage * 1.2f);
             }
-            if (entity.type == ModContent.ItemType<OmegaHealingPotion>() && ModCompatibility.SacredTools.Loaded)
-            {
-                entity.healLife = 400;
-            }
         }
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {

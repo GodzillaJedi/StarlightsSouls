@@ -6,17 +6,16 @@ using Microsoft.Xna.Framework;
 using FargowiltasSouls.Content.Items.Materials;
 using ssm.CrossMod.CraftingStations;
 using ssm.Core;
-using ssm.Thorium.Items;
 using ssm.Calamity.Addons;
 
 namespace ssm.Content.Items.Materials
 {
     public class tModLoadiumBar : ModItem
     {
-        //public override bool IsLoadingEnabled(Mod mod)
-        //{
-        //    return CSEConfig.Instance.AlternativeSiblings;
-        //}
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return CSEConfig.Instance.ExperimentalContent;
+        }
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
         {
             if ((line.Mod == "Terraria" && line.Name == "ItemName") || line.Name == "FlavorText")
@@ -81,23 +80,10 @@ namespace ssm.Content.Items.Materials
                 recipe.AddIngredient(ModCompatibility.Calamity.Mod.Find<ModItem>("ShadowspecBar"), 1);
                 recipe.AddIngredient(ModCompatibility.Calamity.Mod.Find<ModItem>("MiracleMatter"), 1);
             }
-            if (ModCompatibility.SacredTools.Loaded)
-            {
-                recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("EmberOfOmen"), 1);
-            }
-
 
             if (ModCompatibility.Homeward.Loaded && !ModCompatibility.Calamity.Loaded)
             {
                 recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("FinalBar"), 1);
-            }
-            if (ModCompatibility.Thorium.Loaded && !ModCompatibility.Calamity.Loaded)
-            {
-                recipe.AddIngredient<DreamEssence>(1);
-            }
-            if (ModCompatibility.Redemption.Loaded && !ModCompatibility.Calamity.Loaded)
-            {
-                recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("LifeFragment"), 1);
             }
             if (!ModCompatibility.Calamity.Loaded)
             {

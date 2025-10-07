@@ -13,6 +13,10 @@ namespace ssm.Content.NPCs.RealMutantEX
 {
     public class MutantsCurseEX : SoulsItem
     {
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return CSEConfig.Instance.ExperimentalContent;
+        }
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(3, 11));

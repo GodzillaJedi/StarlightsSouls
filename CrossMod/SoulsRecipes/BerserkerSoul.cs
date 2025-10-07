@@ -7,7 +7,6 @@ using FargowiltasSouls.Content.Items.Accessories.Souls;
 using FargowiltasSouls.Content.Items.Materials;
 using FargowiltasSouls.Core.AccessoryEffectSystem;
 using FargowiltasSouls.Core.Toggler.Content;
-using SacredTools.Content.Items.Accessories;
 using ssm.Content.NPCs.RealMutantEX;
 using ssm.Core;
 using System.Collections.Generic;
@@ -28,56 +27,18 @@ namespace ssm.CrossMod.SoulsRecipes
 
                 if (recipe.HasResult(ModContent.ItemType<BerserkerSoul>()))
                 {
-                    if (ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("TrueMoonEdgedPandolarra"), 1); recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("SolarSigil"), 1); recipe.RemoveIngredient(ItemID.CelestialShell); }
                     if (ModCompatibility.Homeward.Loaded) { recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("PhilosophersStone"), 1); recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("TrueDawnsBorder"), 1); recipe.RemoveIngredient(ItemID.CelestialShell); }
-                    if (ModCompatibility.Redemption.Loaded) { recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("PZGauntlet"), 1); recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("MutagenMelee"), 1); recipe.RemoveIngredient(ModContent.ItemType<BarbariansEssence>()); }
                     if (ModCompatibility.Calamity.Loaded) { recipe.AddIngredient(ModCompatibility.Calamity.Mod.Find<ModItem>("ArkoftheCosmos"), 1); }
-                    if (ModCompatibility.Thorium.Loaded) { recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("BlizzardPouch"), 1); recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("TerrariansLastKnife"), 1); }
                 }
                 if (ModCompatibility.Calamity.Loaded)
                 {
                     if (recipe.HasResult(ModCompatibility.Calamity.Mod.Find<ModItem>("ArkoftheCosmos")))
                     {
-                        if (ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("LuminousEnergy"), 5); }
-                        if (ModCompatibility.Thorium.Loaded) { recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("OceanEssence"), 1); recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("InfernoEssence"), 1); recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("DeathEssence"), 1); }
                         recipe.AddIngredient<Eridanium>(5);
-                    }
-                    if (recipe.HasResult(ModCompatibility.Calamity.Mod.Find<ModItem>("BadgeofBravery")))
-                    {
-                        if (ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("TraceOfChaos"), 5); }
-                        if (ModCompatibility.Thorium.Loaded) { recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("TerrariumCore"), 3); }
                     }
                     if (recipe.HasResult(ModCompatibility.Calamity.Mod.Find<ModItem>("ElementalGauntlet")))
                     {
-                        if (ModCompatibility.Thorium.Loaded)
-                        {
-                            if (!recipe.HasIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("TerrariumCore")))
-                            {
-                                recipe.AddIngredient(ModCompatibility.Thorium.Mod.Find<ModItem>("TerrariumCore"), 3);
-                            }
-                        }
                         if (ModCompatibility.Homeward.Loaded) { recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("DivineTouch"), 1); recipe.RemoveIngredient(ItemID.FireGauntlet); }
-                        if (!ModCompatibility.Homeward.Loaded && ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("FloraFist"), 1); recipe.RemoveIngredient(ItemID.FireGauntlet); }
-                        //if (ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("LuminousEnergy"), 5); }
-                    }
-                }
-                if (ModCompatibility.Homeward.Loaded)
-                {
-                    if (recipe.HasResult(ModCompatibility.Homeward.Mod.Find<ModItem>("PhilosophersStone")))
-                    {
-                        if (ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("OblivionBar"), 8); }
-                    }
-                    if (recipe.HasResult(ModCompatibility.Homeward.Mod.Find<ModItem>("DivineTouch")))
-                    {
-                        if (ModCompatibility.SacredTools.Loaded) { recipe.AddIngredient(ModCompatibility.SacredTools.Mod.Find<ModItem>("FloraFist"), 1); recipe.RemoveIngredient(ItemID.FireGauntlet); }
-                    }
-                }
-                if (ModCompatibility.SacredTools.Loaded)
-                {
-                    if (recipe.HasResult(ModCompatibility.SacredTools.Mod.Find<ModItem>("SolarSigil")))
-                    {
-                        if (ModCompatibility.Redemption.Loaded) { recipe.AddIngredient(ModCompatibility.Redemption.Mod.Find<ModItem>("XeniumAlloy"), 3); }
-                        if (ModCompatibility.Homeward.Loaded) { recipe.AddIngredient(ModCompatibility.Homeward.Mod.Find<ModItem>("SwordmasterBadge"), 1); recipe.RemoveIngredient(ItemID.WarriorEmblem); }
                     }
                 }
             }
@@ -96,20 +57,6 @@ namespace ssm.CrossMod.SoulsRecipes
                     player.AddEffect<PhilosophersStoneEffect>(Item);
                     player.AddEffect<GodlyTouchEffect>(Item);
                     player.AddEffect<BerserkerGloveEffect>(Item);
-                }
-                if (ModCompatibility.SacredTools.Loaded)
-                {
-                    player.AddEffect<FloraFistEffect>(Item);
-                }
-            }
-            if (ModCompatibility.Calamity.Loaded) 
-            {
-                if (Item.type == ModCompatibility.Calamity.Mod.Find<ModItem>("ElementalGauntlet").Type)
-                {
-                    if (ModCompatibility.SacredTools.Loaded)
-                    {
-                        player.AddEffect<FloraFistEffect>(Item);
-                    }
                 }
             }
             if (ModCompatibility.Homeward.Loaded)
@@ -130,14 +77,6 @@ namespace ssm.CrossMod.SoulsRecipes
                 if (ModCompatibility.Homeward.Loaded)
                 {
                     tooltips.Insert(6, new TooltipLine(Mod, "mayo1", Language.GetTextValue(key + "HWJBerserker")));
-                }
-                if (ModCompatibility.SacredTools.Loaded)
-                {
-                    tooltips.Insert(6, new TooltipLine(Mod, "mayo2", Language.GetTextValue(key + "SoABerserker")));
-                }
-                if (ModCompatibility.Thorium.Loaded)
-                {
-                    tooltips.Insert(6, new TooltipLine(Mod, "mayo3", Language.GetTextValue(key + "ThoriumBerserker")));
                 }
             }
         }
@@ -177,20 +116,6 @@ namespace ssm.CrossMod.SoulsRecipes
                 player.kbGlove = true;
                 player.meleeScaleGlove = true;
                 player.autoReuseGlove = true;
-            }
-        }
-        [ExtendsFromMod(ModCompatibility.SacredTools.Name)]
-        public class FloraFistEffect : AccessoryEffect
-        {
-            public override Header ToggleHeader => Header.GetHeader<UniverseHeader>();
-            public override int ToggleItemType => ModContent.ItemType<FloraFist>();
-
-            public override void PostUpdateEquips(Player player)
-            {
-                //nooooo
-                ModCompatibility.SacredTools.Mod.Find<ModItem>("FloraFist").UpdateAccessory(player, true);
-                player.GetDamage(DamageClass.Melee) -= 0.12f;
-                player.GetAttackSpeed(DamageClass.Melee) -= 0.12f;
             }
         }
     }

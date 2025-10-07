@@ -13,7 +13,7 @@ using Spooky.Content.Items.SpookyBiome;
 namespace ssm.Spooky.Enchantments
 {
     [ExtendsFromMod(ModCompatibility.Spooky.Name)]
-    [JITWhenModsEnabled(ModCompatibility.Thorium.Name)]
+    [JITWhenModsEnabled(ModCompatibility.Spooky.Name)]
     public class RottenGourdEnchant : BaseEnchant
     {
         public override bool IsLoadingEnabled(Mod mod)

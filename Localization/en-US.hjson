@@ -3045,11 +3045,6 @@ Mods: {
 				DisplayName: Catlight
 			}
 
-			SwarmDeactivatorDebug: {
-				Tooltip: ""
-				DisplayName: Swarm Deactivator Debug
-			}
-
 			AquaQuiver: {
 				DisplayName: Aqua Quiver
 				Tooltip: ""
@@ -3513,11 +3508,6 @@ Mods: {
 
 			TruffleWormEX: {
 				DisplayName: Truffle Worm EX
-				Tooltip: ""
-			}
-
-			BossWatcher: {
-				DisplayName: Boss Watcher
 				Tooltip: ""
 			}
 
