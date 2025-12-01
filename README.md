@@ -1,6 +1,6 @@
-# Starlight's Souls
+# GodzillaJedi's Community Soul Expansion Plus
 
-Our own version(Shtuk(owner) and GodzillaJedi(fork owner)) of Fargo Souls DLC
+My own (GodzillaJedi(owner)) interpretation of Fargo Souls DLC
 
 Currrent compatible mods:
 - Thorium
